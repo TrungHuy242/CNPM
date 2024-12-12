@@ -1,11 +1,7 @@
 ### A React application that manages the process of booking a hotel room
 
-#### :point_right: **[Preview here](https://react-hotel-rooms-booking.netlify.app/)**
-
-<kbd><img src="https://github.com/girls-incode/react-hotel-booking-app/blob/master/hotel-booking-home.png" alt="" width="900"/></kbd>
 <br/><br/>
 <kbd>
-<img src="https://github.com/girls-incode/react-hotel-booking-app/blob/master/hotel-booking-activities-1.png" alt="" width="900" />
 </kbd>
 <br>
 
