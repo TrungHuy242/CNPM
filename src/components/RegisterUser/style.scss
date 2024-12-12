@@ -1,0 +1,119 @@
+.register-background {
+    height: 100%; /* Đảm bảo chiếm toàn bộ chiều cao màn hình */
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    position: relative;
+    overflow: hidden; /* Để ẩn các phần ngoài khu vực hình nền */
+  
+    background-image: url('/assets/images/Background1.jpg'), 
+                      url('/assets/images/Background2.jpg'), 
+                      url('/assets/images/Background3.jpg'), 
+                      url('/assets/images/Background4.jpg'), 
+                      url('/assets/images/Background5.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    animation: backgroundMove 20s infinite alternate;
+  }
+
+  .register-logo {
+    width: 20%;
+    height: 60px;
+    margin-left: 159px;
+  }
+  
+  @keyframes backgroundMove {
+    0% {
+      background-image: url('/assets/images/Background1.jpg');
+    }
+    25% {
+      background-image: url('/assets/images/Background2.jpg');
+    }
+    50% {
+      background-image: url('/assets/images/Background3.jpg');
+    }
+    75% {
+      background-image: url('/assets/images/Background4.jpg');
+    }
+    100% {
+      background-image: url('/assets/images/Background5.jpg');
+    }
+  }
+  
+  .register-container {
+    max-width: 500px;
+    width: 100%;
+    padding: 40px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: white;
+    margin: 100px auto;
+    margin-left: 900px; 
+    
+  
+    h1 {
+      text-align: center;
+    }
+  
+    .form-group {
+      margin-bottom: 15px;
+  
+      label {
+        display: block;
+        margin-bottom: 5px;
+      }
+  
+      input,
+      select {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+      }
+
+      select {
+        appearance: none;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        background: url('/assets/images/arrow-down.jpg') no-repeat right 10px center; /* Thêm mũi tên xuống */
+        background-size: 15px;
+      }
+
+    }
+  
+    button {
+      width: 100%;
+      padding: 10px;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+  
+      &:hover {
+        background-color: #e3b462;
+      }
+    }
+  
+    p {
+      text-align: center;
+    }
+  
+    a {
+      color: #007bff;
+      text-decoration: none;
+  
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  
+    .error-message {
+      color: red;
+      text-align: center;
+      margin-bottom: 15px;
+    }
+  }
+  

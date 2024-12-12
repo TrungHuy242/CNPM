@@ -1,0 +1,55 @@
+// Biến màu sắc
+$primary-color: #deaa86; // Màu vàng ánh kim
+$hover-color: darken($primary-color, 10%);
+$text-color: #fff;
+
+// Nút "Thêm dịch vụ"
+.btn-link {
+  background-color: transparent;
+  color: $primary-color;
+  font-weight: bold;
+  border: none;
+  text-decoration: none;
+  cursor: pointer;
+
+  &:hover {
+    color: $hover-color;
+    text-decoration: underline;
+  }
+  &:focus {
+    outline: none; // Loại bỏ outline nếu cần
+  }
+}
+
+// Nút chung "Trở lại" và "Tiếp"
+.btn {
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: 600;
+  border: 2px solid $primary-color;
+  border-radius: 25px;
+  background-color: $primary-color;
+  color: $text-color;
+  transition: all 0.3s ease;
+
+  &:hover {
+    background-color: $hover-color;
+    border-color: $hover-color;
+    transform: translateY(-3px); // Hiệu ứng nổi
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+
+  &:active {
+    transform: translateY(1px); // Hiệu ứng nhấn
+    box-shadow: none;
+  }
+}
+
+// Container cho các nút điều hướng
+.d-flex {
+  justify-content: space-between;
+
+  .btn {
+    min-width: 120px; // Đảm bảo kích thước đồng đều
+  }
+}

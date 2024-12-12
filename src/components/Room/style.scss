@@ -1,0 +1,121 @@
+@import '../../assets/css/variables';
+
+@mixin card-hover {
+  box-shadow: 3px 0 5px 0 rgba(151, 151, 151, 0.23);
+  cursor: pointer;
+}
+
+main {
+  .card {
+    &:hover,
+    &:active {
+      @include card-hover();
+    }
+  }
+
+  .card-active {
+    @include card-hover();
+  }
+}
+
+.card {
+  padding: 30px;
+  border: solid 1px $color-gray-1;
+  border-radius: 8px;  // Thêm border-radius để các góc mềm mại hơn
+  margin-bottom: 20px;  // Thêm khoảng cách dưới mỗi thẻ card
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;  // Đảm bảo các phần tử trong card được phân bố đều
+
+  &:not(:last-child) {
+    border-bottom: 0;
+  }
+
+  h2 {
+    font-size: 25px;
+  }
+
+  .card-img {
+    width: 45%;
+    margin-left: -30px;
+    margin-right: 30px;
+    border-radius: 8px;  // Thêm border-radius cho ảnh
+  }
+
+  p {
+    color: #deaa86;  // Đặt màu chữ
+    font-weight: 500;  // Tăng độ đậm nhẹ nếu cần
+    margin-bottom: 10px;  // Thêm khoảng cách dưới mỗi đoạn văn
+  }
+
+  .d-flex {
+    display: flex;
+    justify-content: space-between;  // Chia đều không gian giữa "Giường" và "Số người"
+    margin-bottom: 20px;  // Thêm khoảng cách dưới phần "Giường" và "Số người"
+
+    div {
+      color: #deaa86;  // Màu cho "Giường" và "Số người"
+      font-weight: 500;
+      margin-right: 20px;  // Thêm khoảng cách phải giữa các phần tử
+    }
+  }
+
+  .price-container {
+    display: flex;
+    justify-content: flex-end;  // Căn chỉnh tiền sang phải
+    align-items: flex-end;  // Đảm bảo tiền nằm ở dưới cùng
+    margin-top: auto;  // Đẩy phần giá xuống dưới cùng của thẻ
+  }
+
+  .price {
+    font-weight: bold;
+    font-size: 1.75rem;
+    line-height: 1.75rem;
+  }
+
+  .discounted-price {
+    font-weight: bold;
+    font-size: 1.75rem;
+    color: red;
+    margin-top: 5px;  // Thêm khoảng cách trên giá giảm
+  }
+}
+
+@media only screen and (max-width: 567px) {
+  main .card {
+    flex-direction: column !important;
+    margin-top: 60px;
+    padding-top: 20px;
+    padding-left: 30px !important;
+    padding-right: 30px !important;  // Thêm padding bên phải khi màn hình nhỏ
+
+    &:not(:last-child) {
+      border-bottom: solid 1px $color-gray-1;
+    }
+
+    .card-img {
+      width: 100%;
+      margin: 0 0 20px 0;  // Điều chỉnh margin ảnh để không bị sát phần dưới
+    }
+
+    .price-container {
+      margin-top: 20px;  // Thêm khoảng cách giữa giá và các phần tử trên
+    }
+
+    .price {
+      font-size: 1.5rem;
+      text-align: center;
+      margin-bottom: 10px;  // Thêm khoảng cách dưới giá
+    }
+
+    .d-flex {
+      flex-direction: column;
+      align-items: center;  // Căn giữa các phần tử trong thẻ d-flex
+
+      div {
+        margin-bottom: 8px;  // Thêm khoảng cách giữa các div
+        font-size: 1rem;
+      }
+    }
+  }
+}

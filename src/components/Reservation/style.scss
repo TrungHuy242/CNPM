@@ -1,0 +1,144 @@
+.card {
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+
+    h2 {
+        margin-bottom: 20px;
+        font-size: 24px;
+        font-weight: bold;
+    }
+
+    .d-flex {
+        &.justify-content-between {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 15px;
+
+            .font-weight-bold {
+                margin-bottom: 5px;
+                font-size: 18px;
+            }
+
+            .form-item {
+                width: 100%;
+                padding: 10px;
+                border: 1px solid #ddd;
+                border-radius: 5px;
+            }
+        }
+
+        &.flex-column {
+            flex-direction: column;
+            gap: 15px;
+        }
+    }
+
+    .date-picker-group {
+        display: flex;
+        gap: 20px;
+
+        > div {
+            flex: 1;
+
+            label {
+                font-weight: bold;
+                margin-bottom: 5px;
+                display: block;
+            }
+
+            .form-item {
+                width: 100%;
+            }
+        }
+    }
+
+    .card-total {
+        padding-top: 20px;
+        margin-top: 20px;
+        border-top: 1px solid #ddd;
+
+        > div {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+
+        .price {
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        a {
+            $color-blue-1: #3498db;
+        }
+    }
+
+    button.btn-primary {
+        background-color: #deaa86;
+        border: none;
+        color: white;
+        font-size: 16px;
+        padding: 10px 20px;
+        text-transform: uppercase;
+        cursor: pointer;
+        position: relative;
+        overflow: hidden;
+        transition: all 0.3s ease-in-out;
+
+        &:hover {
+            background-color: #f5d4a5;
+        }
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(to right, #f5d4a5, #deaa86);
+            z-index: 0;
+            transition: left 0.3s ease-in-out;
+        }
+
+        &:hover::before {
+            left: 0;
+        }
+
+        span {
+            position: relative;
+            z-index: 1;
+        }
+    }
+}
+.mb-3 {
+    margin-bottom: 15px;
+
+    .font-weight-bold {
+        font-size: 22px; // Kích thước chữ nhỏ hơn một chút
+        font-weight: 800;
+        margin-bottom: 10px; // Khoảng cách vừa phải
+        color: #555; // Màu nhẹ nhàng
+    }
+
+    > div {
+
+        select {
+            width: 100%; // Đảm bảo tự động điều chỉnh kích thước
+            max-width: 120px; // Định giới hạn để không quá to
+            padding: 5px 10px; // Đệm bên trong
+            font-size: 16px; // Chữ nhỏ vừa phải
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            background-color: #fff;
+            transition: border-color 0.2s ease;
+
+            
+
+            
+        }
+    }
+}

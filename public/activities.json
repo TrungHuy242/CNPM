@@ -1,0 +1,34 @@
+[
+  {
+    "id": 1,
+    "name": "Bữa tối đặc biệt.",
+    "desc": "'Ở khách sạn, chúng tôi biết cách làm cho một ngày đặc biệt trở nên sáng sủa và không thể quên. Thưởng thức bữa tối lãng mạn cho 2 người tại nhà hàng yêu thích của chúng tôi.'",
+    "capacity": 2,
+    "price": 45,
+    "photo": "activity_1.png"
+  },
+  {
+    "id": 2,
+    "name": "Lướt sóng",
+    "desc": "Dịch vụ lướt sóng  ở biển tuyệt vời của chúng tôi. Chỉ với €25 mỗi giờ, bạn sẽ có thời gian tuyệt vời với gia đình , bạn bè cho một kì nghỉ đầy hoạt động thú vị.",
+    "capacity": 2,
+    "price": 25,
+    "photo": "activity_2.png"
+  },
+  {
+    "id": 3,
+    "name": "Cưỡi ngựa",
+    "desc": "Chạy thong qua cảnh quan tuyệt đẹp của một trong những công viên thiên nhiên uy nghi nhất ở Catalonia trong một chuyến đi cưỡi ngựa nửa ngày từ Barcelona..",
+    "capacity": 4,
+    "price": 80,
+    "photo": "activity_3.jpg"
+  },
+  {
+    "id": 4,
+    "name": "Bảo tàng ",
+    "desc": "Thăm 6 bảo tàng tốt nhất ở Barcelona với Articket, Thẻ Du lịch Nghệ thuật mà bạn có thể tiết kiệm tối đa 45% và giữ lại kỷ niệm của chuyến thăm..",
+    "capacity": 7,
+    "price": 35,
+    "photo": "activity_4.jpg"
+  }
+]

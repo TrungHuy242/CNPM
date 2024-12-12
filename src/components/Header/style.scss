@@ -1,0 +1,166 @@
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 99;
+  background: white;
+}
+
+.nav {
+  a {
+    padding: 0 30px;
+
+    &:hover {
+      text-decoration: none;
+      color: #deaa86;
+    }
+  }
+}
+
+.logo {
+  height: 36px;
+}
+
+.mobile-nav {
+  display: none;
+}
+
+.navbar-toggle {
+  border: 0;
+  background: transparent;
+}
+
+.icon-bar {
+  display: block;
+  width: 22px;
+  height: 2px;
+  margin-bottom: 4px;
+  border-radius: 1px;
+  background: #4a4a4a;
+}
+
+.user-icon {
+  position: relative;
+  cursor: pointer;
+  position: absolute;
+  right: 10%;
+  margin-bottom: 10px;
+
+
+  .dropdown-menu {
+      position: absolute;
+      top: 100%;
+      right: 0;
+      background-color: #fff;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+      z-index: 1000;
+      min-width: 150px;
+      display: flex;
+      flex-direction: column;
+
+      .dropdown-item {
+          padding: 10px 15px;
+          text-align: left;
+          color: #333;
+          text-decoration: none;
+          transition: background-color 0.2s;
+
+          &:hover {
+              background-color: #deaa86;
+          }
+      }
+
+      button {
+          background: none;
+          border: none;
+          width: 100%;
+          text-align: left;
+          color: #333;
+          padding: 10px 15px;
+          cursor: pointer;
+
+          &:hover {
+              background-color: #deaa86;
+          }
+      }
+  }
+}
+
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes grow {
+  from {
+    height: 10px;
+  }
+  to {
+    height: 200px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .logo {
+    display: none;
+  }
+  .mobile-nav {
+    display: block;
+  }
+  .menu {
+    display: none;
+    flex-direction: column;
+    animation: grow 0.6s ease-in, fadeIn 1.6s ease-in-out both;
+  }
+  .container {
+    justify-content: space-between !important;
+    align-items: flex-start !important;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  .menu a {
+    padding: 0 4px;
+  }
+}
+
+/* style.scss */
+.notifications-page {
+  padding: 20px;
+  background-color: #f9f9f9;
+  color: #333;
+  font-family: Arial, sans-serif;
+}
+
+.notifications-page h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.notification-item {
+  background-color: #fff;
+  padding: 15px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.notification-item p {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.notification-item small {
+  display: block;
+  margin-top: 10px;
+  font-size: 0.875rem;
+  color: #888;
+}

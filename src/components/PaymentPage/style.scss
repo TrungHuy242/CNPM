@@ -1,0 +1,78 @@
+.payment-card {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    flex-wrap: wrap;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    margin-bottom: 65px;
+
+    .payment-details {
+        flex: 1; /* Chiếm 1 phần theo tỉ lệ */
+        margin-right: 20px; /* Tạo khoảng cách với phần bên phải */
+        padding: 20px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        background-color: #fff;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .payment-bank-info {
+        flex: 0.4; /* Nhỏ hơn một chút so với phần bên trái */
+        padding: 20px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        background-color: #fff;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+
+    .payment-title {
+        margin-bottom: 15px;
+        font-size: 1.5em;
+        color: #333;
+        border-bottom: 2px solid #007bff;
+        padding-bottom: 10px;
+    }
+
+    .room-info, .extra-info {
+        margin-bottom: 20px;
+    }
+
+    .extra-item {
+        margin: 5px 0;
+    }
+
+    .total-info {
+        margin-top: 10px;
+        font-weight: bold;
+        font-size: 1.2em;
+    }
+
+    .qr-code {
+        display: flex;
+        justify-content: center;
+        margin: 20px 0; 
+
+        .qr-image {
+            width: 100px; 
+            height: auto; 
+        }
+    }
+
+    .payment-option {
+        margin-top: 10px;
+    }
+
+    @media (max-width: 768px) {
+        flex-direction: column;
+
+        .payment-details,
+        .payment-bank-info {
+            width: 100%;
+            margin-right: 0;
+            margin-bottom: 20px; /* Khoảng cách giữa các phần trên màn hình nhỏ */
+        }
+    }
+}

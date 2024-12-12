@@ -1,0 +1,164 @@
+/* Container for avatars */
+.avatar-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center; /* Center the avatars */
+    padding: 20px;
+}
+
+/* Avatar item */
+.avatar {
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.avatar:hover {
+    transform: scale(1.1); /* Slight zoom effect on hover */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Avatar circle */
+.avatar-image {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: #007bff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 24px; /* Larger font for initials */
+    margin: 0 auto 10px;
+    transition: background-color 0.3s ease;
+}
+
+.avatar:hover .avatar-image {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Avatar name */
+.avatar p {
+    margin-top: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Section for user details */
+.user-details-section {
+    margin-top: 20px;
+    padding: 25px;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin: 0 auto; /* Center the section */
+    border: 1px solid #eaeaea;
+}
+
+/* Header */
+.user-details-section h3 {
+    margin-bottom: 20px;
+    color: #007bff;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* User details table */
+.user-details-section table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+.user-details-section table th,
+.user-details-section table td {
+    border: 1px solid #ddd;
+    padding: 10px 15px;
+    text-align: left;
+    font-size: 14px;
+}
+
+.user-details-section table th {
+    background: #007bff;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.user-details-section table tr:nth-child(even) {
+    background: #f9f9f9;
+}
+
+.user-details-section table tr:hover {
+    background: #f1f1f1;
+    transition: background-color 0.2s ease;
+}
+
+/* Highlighted details section */
+.user-details-section p {
+    margin-top: 10px;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #555;
+}
+
+/* General buttons for actions (optional) */
+.button {
+    display: inline-block;
+    padding: 10px 15px;
+    margin-top: 10px;
+    background: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-size: 14px;
+    transition: background 0.3s ease;
+}
+
+.button:hover {
+    background: #0056b3;
+}
+.user-details {
+    margin-top: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+.user-details h3 {
+    margin-bottom: 20px;
+    font-size: 20px;
+    text-align: center;
+    color: #007bff;
+}
+
+.user-details table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.user-details table th,
+.user-details table td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+.user-details table th {
+    background: #007bff;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.user-details table tr:nth-child(even) {
+    background: #f2f2f2;
+}
+
+.user-details table tr:hover {
+    background: #f1f1f1;
+}

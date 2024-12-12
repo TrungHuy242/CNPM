@@ -1,0 +1,114 @@
+.login-background {
+    background-size: 50%; /* Hình nền phủ toàn bộ */
+    background-repeat: no-repeat; /* Không lặp hình nền */
+    height: 100vh; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    overflow: hidden;
+    animation: backgroundMove 20s infinite alternate;
+
+  /* Định nghĩa các hình ảnh nền */
+  background-image: url('/assets/images/Background1.jpg'), 
+                    url('/assets/images/Background2.jpg'), 
+                    url('/assets/images/Background3.jpg'), 
+                    url('/assets/images/Background4.jpg'), 
+                    url('/assets/images/Background5.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  }
+
+  @keyframes backgroundMove {
+    0% {
+      background-image: url('/assets/images/Background1.jpg');
+    }
+    25% {
+      background-image: url('/assets/images/Background2.jpg');
+    }
+    50% {
+      background-image: url('/assets/images/Background3.jpg');
+    }
+    75% {
+      background-image: url('/assets/images/Background4.jpg');
+    }
+    100% {
+      background-image: url('/assets/images/Background5.jpg');
+    }
+  }
+
+.login-container {
+    max-width: 400px;
+    padding: 50px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: white;
+    margin-top: 20px;
+    margin-left: 900px;
+    animation: fadeIn 2s ease-out;
+    
+    h1 {
+      text-align: center;
+    }
+    
+
+    .login-logo{
+      width: 30%;
+      height: 50px;
+      margin-left: 69px;
+    }
+    .form-group {
+      margin-bottom: 15px;
+  
+      label {
+        display: block;
+        margin-bottom: 5px;
+      }
+  
+      input {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+      }
+    }
+  
+    button {
+      width: 100%;
+      padding: 10px;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+  
+      &:hover {
+        background-color: #e3b462;
+      }
+    }
+  
+    p {
+      text-align: center;
+    }
+  
+    a {
+      color: #007bff;
+      text-decoration: none;
+  
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+    
+  } @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  
+  

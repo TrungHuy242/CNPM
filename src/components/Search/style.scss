@@ -1,0 +1,129 @@
+@import '../../assets/css/variables';
+
+.search {
+  position: relative;
+  margin-top: 50px;
+  background: url('../../assets/images/home_header.jpg') no-repeat center;
+  background-size: cover;
+  height: 800px;
+  width: 100%;
+  @media (min-width: 768px) {
+    background-size: 100%; /* Tăng kích thước cho màn hình lớn */
+    height: 800px; 
+  }
+}
+
+.search-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 700px;
+
+  > * {
+    margin: 10px 15px;
+  }
+}
+
+.calendar {
+  .bi {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    line-height: initial;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    background-color: #eee;
+    cursor: pointer;
+  }
+}
+
+.sunset-hotel-title {
+  font-size: 3rem;  /* Cỡ chữ lớn */
+  font-weight: bold;
+  color: #fff;  /* Màu chữ trắng */
+  position: absolute;
+  top: 45%;  /* Căn giữa theo chiều dọc */
+  left: 50%;  /* Căn giữa theo chiều ngang */
+  transform: translate(-50%, -50%);  /* Đảm bảo căn chính xác giữa */
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);  /* Tạo hiệu ứng đổ bóng cho chữ */
+  z-index: 2;  /* Đảm bảo chữ hiển thị phía trên các phần tử khác */
+  padding: 20px 40px;  /* Khoảng cách giữa chữ và khung */
+  border: 5px solid #fff;  /* Viền trắng xung quanh tiêu đề */
+  border-radius: 10px;  /* Bo góc viền */
+  background-color: rgba(0, 0, 0, 0.5);  /* Nền trong suốt với màu đen */
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.7); 
+}
+
+.search-wrapper {
+  background: rgba(0, 0, 0, 0.5); /* Tăng độ che phủ màu đen */
+  width: 100%; /* Chiếm toàn bộ chiều rộng */
+  height: 98%; /* Phủ toàn bộ chiều cao của ảnh nền */
+  position: absolute; /* Đặt vị trí để bao phủ .search */
+  top: 0; /* Canh chỉnh phía trên */
+  left: 0; /* Canh chỉnh phía trái */
+  display: flex; /* Đảm bảo nội dung được căn giữa */
+  justify-content: center;
+  align-items: center;
+}
+
+.react-datepicker {
+  font-family: 'Dosis', sans-serif;
+}
+
+.react-datepicker__header {
+  background-color: white;
+  border-bottom: 0;
+}
+
+.react-datepicker__day--today {
+  background-color: $color-yellow;
+  border-radius: 0.3rem;
+  font-weight: normal;
+  color: #000;
+}
+
+.react-datepicker__day--selected {
+  background-color: $color-blue-4;
+  color: white;
+}
+
+.react-datepicker__day-names {
+  font-weight: bold;
+}
+
+.react-datepicker__day--keyboard-selected {
+  background-color: inherit;
+  color: inherit;
+  &:hover {
+    background-color: inherit;
+  }
+}
+
+.react-datepicker__triangle {
+  border-bottom-color: white !important;
+}
+
+@media only screen and (max-width: 567px) {
+  .search-content {
+    flex-direction: column;
+    > * {
+      margin: 10px 5px;
+    }
+    .react-datepicker-wrapper,
+    .form-item,
+    .btn {
+      width: 100%;
+    }
+  }
+}
+
+.react-datepicker__tab-loop {
+  margin: 0;
+}
